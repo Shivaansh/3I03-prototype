@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Demo Page 2!!!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <script src=”//code.jquery.com/jquery-1.11.3.min.js”></script>
+        <script src=”alert/jAlert-v3.min.js”></script>
+        <script src=”alert/jAlert-functions.min.js”></script>
+        <link rel=”stylesheet” href=”alert/jAlert-v3.css” />
+        
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									</span><span class="title">DEMO</span>
+                                    
+                                </a>
+                                <form action="" method="post" id="target">
+                                    <input type="text" placeholder="comments" id="textbox">
+                                    <input type="submit" value="Submit" class="alertdemo">
+                                </form>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1 id="Header" style="color:red;">*******!!</h1>
+							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							<p id="phrase2">Donald Trump tweeted something!</p>
+                            <p id="phrase3" style="color:red;">*******</p>
+                            <button id="Hide">This is hateful!</button>
+                            <button id="Show">This is not hateful!</button>
+						</div>
+					</div>
+			</div>
+        <!-- Scripts -->
+
+        <script>
+            $(document).ready(function() {
+             
+            $(".alertdemo").click(function() {
+                jConfirm('Are you sure to delete the account permanently?', 'Confirmation Title goes here', function(result) {
+                    if (result){
+                    jAlert('Your account is removed','You clicked OK');
+                    }
+                    else{
+                    jAlert('Your account is safe', 'You clicked cancel');    
+                    }
+            });
+            });
+             
+            });
+        </script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="generic2.js"></script>
+        </body>
+</html>

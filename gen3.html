@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+ 
+<script src="alert/jquery.alerts.js" type="text/javascript"></script>
+<link href="alert/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+
+<style>
+.divalert{
+  background: #1A3C57;
+  width:220px;
+  border-radius: 15px;
+  padding:20px;
+  font-size:18px;
+  color:#fff;   
+}
+</style> 
+
+</head>
+<body>
+<div class="divalert">
+<input class="alertdemo" type="button" value="Trigger a confirm alert" />
+</div>
+
+<script>
+$(document).ready( function() {
+ 
+$(".alertdemo").click( function() {
+    jConfirm('Are you sure to delete the account permanently?', 'Confirmation Title goes here', function(result) {
+        if (result){
+        jAlert('Your account is removed','You clicked OK');
+        }
+        else{
+        jAlert('Your account is safe', 'You clicked cancel');    
+        }
+});
+});
+ 
+});
+</script>
+</body>
+</html>
+
