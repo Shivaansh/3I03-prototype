@@ -1,4 +1,4 @@
-alert(" generic1.js connected");
+//alert(" generic1.js connected");
 $("#Header").css("color", "red");
 $("#phrase3").css("color", "red");
 
